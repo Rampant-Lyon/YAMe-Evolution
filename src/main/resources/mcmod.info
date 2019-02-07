@@ -1,0 +1,16 @@
+[
+{
+  "modid": "evo",
+  "name": "YAM-Evolutions",
+  "description": "YAM-EVO development build",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SirNiloc"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
