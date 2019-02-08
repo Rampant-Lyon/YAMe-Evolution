@@ -1,9 +1,6 @@
 package com.sirniloc.yam.evo;
 
 import com.draco18s.reasonablerealism.SimpleCapabilityProvider;
-import com.sirniloc.yam.BaseYAM;
-import com.sirniloc.yam.character.capa.CharacterYAM;
-import com.sirniloc.yam.character.capa.interfaces.IAbilityScores;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -23,6 +20,6 @@ public class EventHandlerEvo {
 	}
 	
 	public static ICapabilityProvider createProvider(IEvolution evoCap) {
-		return new SimpleCapabilityProvider<IEvolution>(BaseEvo.EVO_ID, null, evoCap);
+		return new SimpleCapabilityProvider<IEvolution>(BaseEvo.EVO_CAP, null, evoCap);
 	}
 }

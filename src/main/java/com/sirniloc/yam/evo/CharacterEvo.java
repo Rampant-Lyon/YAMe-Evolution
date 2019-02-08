@@ -1,5 +1,7 @@
 package com.sirniloc.yam.evo;
 
+
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
@@ -12,20 +14,77 @@ public class CharacterEvo implements IEvolution, INBTSerializable<NBTTagCompound
 
 	public CharacterEvo(EntityLivingBase e) {
 		theEntity = e;
-		if(evolutionIndex<0 && !(e instanceof EntityPlayer))evolutionIndex=Evolution.getRandomRaceIndex(Evolution.EVOLUTION_COUNT);
+		if(evolutionIndex<0 && !(e instanceof EntityPlayer))evolutionIndex=Evolution.getRandomIndex(Evolution.EVOLUTION_COUNT);
 	}
 	
 
 	@Override
 	public NBTTagCompound serializeNBT() {
-		// TODO Auto-generated method stub
-		return null;
+		return (NBTTagCompound) NBTHelper.writeNBT(null, this, null);
+		
 	}
-
 	@Override
 	public void deserializeNBT(NBTTagCompound nbt) {
+
+		NBTHelper.readNBT(null, this, null, nbt);
+	
+		
+	}
+
+
+	@Override
+	public void setMind(int integer) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public void setBody(int integer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void setSpirit(int integer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void setRaceInt(int integer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public int getMind() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public int getBody() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public int getSpirit() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public int getRaceInt() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
