@@ -1,6 +1,6 @@
 [
 {
-  "modid": "evo",
+  "modid": "yam.evo",
   "name": "YAM-Evolutions",
   "description": "YAM-EVO development build",
   "version": "${version}",

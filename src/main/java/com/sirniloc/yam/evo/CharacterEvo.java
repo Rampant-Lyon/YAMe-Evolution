@@ -9,14 +9,14 @@ import net.minecraftforge.common.util.INBTSerializable;
 
 public class CharacterEvo implements IEvolution, INBTSerializable<NBTTagCompound> {
 
+	
 	private EntityLivingBase theEntity;
 	private int evolutionIndex = -1;
 
 	public CharacterEvo(EntityLivingBase e) {
 		theEntity = e;
 		if(evolutionIndex<0 && !(e instanceof EntityPlayer))evolutionIndex=Evolution.getRandomIndex(Evolution.EVOLUTION_COUNT);
-	}
-	
+	}	
 
 	@Override
 	public NBTTagCompound serializeNBT() {

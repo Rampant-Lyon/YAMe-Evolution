@@ -7,6 +7,11 @@ import net.minecraft.util.math.MathHelper;
 
 public class Evolution extends Race{
 
+	public enum evos {
+		LYCAN,HALLOW,VAMPIRE,
+		FALLEN,WRAITH,SPIRIT,
+		DEMON,WISP
+	}	
 	
 	static Evolution noEvolution = new Evolution();
 	
@@ -19,7 +24,7 @@ public class Evolution extends Race{
 			new Evolution("Spirit",5,1,3),
 			new Evolution("Demon",1,5,0),
 			new Evolution("Wisp",3,1,5)
-			};
+	};
 
 	
 	public static final int EVOLUTION_COUNT = EVOLUTIONS.length;

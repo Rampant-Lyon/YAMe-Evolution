@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 @Mod(modid = BaseEvo.MODID, version = BaseEvo.VERSION)
 public class BaseEvo
 {
-    public static final String MODID = "evo";
+    public static final String MODID = "yam.evo";
     public static final String VERSION = "0.1";
     
     
